@@ -2,3 +2,5 @@
 - hosts: localhost
   tasks:
   - shell: echo "hello world"
+    register: out
+  - debug: var=out
